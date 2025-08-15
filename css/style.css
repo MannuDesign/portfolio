@@ -35,7 +35,7 @@ box-sizing:border-box;
     hsl(35, 100%, 68%)
   );
 
-  /* solid */
+ 
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
@@ -50,14 +50,10 @@ box-sizing:border-box;
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-  /**
-   * typography
-   */
-
-  /* font-family */
+  
   --ff-poppins: 'Poppins', sans-serif;
 
-  /* font-size */
+  
   --fs-1: 24px;
   --fs-2: 18px;
   --fs-3: 17px;
@@ -67,15 +63,13 @@ box-sizing:border-box;
   --fs-7: 13px;
   --fs-8: 11px;
 
-  /* font-weight */
+ 
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * shadow
-   */
+  
   
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
@@ -83,22 +77,14 @@ box-sizing:border-box;
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-  /**
-   * transition
-   */
-
+ 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+ 
 
 *, *::before, *::after {
   margin: 0;
@@ -140,11 +126,7 @@ body { background: var(--smoky-black); }
 
 
 
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+ 
 
 .sidebar,
 article {
@@ -240,8 +222,8 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px;  
+  height: 5px;  
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -276,14 +258,7 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
-
+ 
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
@@ -293,10 +268,7 @@ main {
 
 
 
-
-/*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
+ 
 
 .sidebar {
   margin-bottom: 15px;
@@ -433,10 +405,7 @@ main {
 
 
 
-
-/*-----------------------------------*\
-  #NAVBAR
-\*-----------------------------------*/
+ 
 
 .navbar {
   position: fixed;
@@ -475,9 +444,7 @@ main {
 
 
 
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
+ 
 
 .about .article-title { margin-bottom: 15px; }
 
@@ -495,12 +462,7 @@ main {
 .about-text p { margin-bottom: 15px; color:#FDFDFD;}
  
 
-
-
-/**
- * #service 
- */
-
+ 
 .service { margin-bottom: 35px; }
 
 .service-title { margin-bottom: 20px; }
@@ -544,11 +506,7 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #testimonials 
- */
-
+ 
 .testimonials { margin-bottom: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
@@ -598,11 +556,7 @@ main {
   overflow: hidden;
 }
 
-
-/**
- * #testimonials-modal
- */
-
+ 
 .modal-container {
   position: fixed;
   top: 0;
@@ -712,10 +666,8 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #clients 
- */
+ 
+ 
 
 .clients { margin-bottom: 15px; }
 
@@ -746,19 +698,11 @@ main {
 }
  
 
-
-
-/*-----------------------------------*\
-  #RESUME
-\*-----------------------------------*/
-
+ 
 .article-title { margin-bottom: 30px; }
 
 
-/**
- * education and experience 
- */
-
+ 
 .timeline { margin-bottom: 30px; }
 
 .timeline .title-wrapper {
@@ -817,10 +761,8 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * skills 
- */
+ 
+ 
 
 .skills-title { margin-bottom: 20px; }
 
@@ -855,13 +797,7 @@ main {
   border-radius: inherit;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #PORTFOLIO
-\*-----------------------------------*/
+ 
 
 .filter-list { display: none; }
 
@@ -1016,11 +952,7 @@ main {
 
 
 
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
+ 
 
 .blog-posts { margin-bottom: 10px; }
 
@@ -1105,11 +1037,7 @@ main {
 
 
 
-
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
-
+ 
 .mapbox {
   position: relative;
   height: 250px;
@@ -1212,29 +1140,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
-
-/**
- * responsive larger than 450px screen
- */
-
+ 
 @media (min-width: 450px) {
-
-  /**
-   * client
-   */
+ 
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
+ 
   .project-img,
   .blog-banner-box { height: auto; }
 
@@ -1243,22 +1155,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
-/**
- * responsive larger than 580px screen
- */
+ 
 
 @media (min-width: 580px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
+ 
   :root {
-
-    /**
-     * typography
-     */
+ 
 
     --fs-1: 32px;
     --fs-2: 24px;
@@ -1270,11 +1172,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
-
-  /**
-   * #REUSED STYLE
-   */
+ 
 
   .sidebar, article {
     width: 520px;
@@ -1300,21 +1198,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-
-  /**
-   * #MAIN
-   */
+ 
 
   main {
     margin-top: 60px;
     margin-bottom: 100px;
   }
-
-
-
-  /**
-   * #SIDEBAR
-   */
+ 
 
   .sidebar {
     max-height: 180px;
@@ -1355,11 +1245,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: calc(100% - 64px);
   }
 
-
-
-  /**
-   * #NAVBAR
-   */
+ 
 
   .navbar { border-radius: 20px 20px 0 0; }
 
@@ -1367,17 +1253,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { --fs-8: 14px; }
 
-
-
-  /**
-   * #ABOUT
-   */
-
+ 
   .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
 
-  /* service */
+ 
 
   .service-item {
     display: flex;
@@ -1394,7 +1275,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-content-box { text-align: left; }
 
-  /* testimonials */
+ 
 
   .testimonials-title { margin-bottom: 25px; }
 
@@ -1427,7 +1308,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     -webkit-line-clamp: 2;
   }
 
-  /* testimonials modal */
+ 
 
   .modal-container { padding: 20px; }
 
@@ -1459,7 +1340,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 35px;
   }
 
-  /* clients */
+ 
 
   .clients-list {
     gap: 50px;
@@ -1470,11 +1351,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 35px); }
 
-
-
-  /**
-   * #RESUME
-   */
+ 
 
   .timeline-list { margin-left: 65px; }
 
@@ -1487,13 +1364,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG
-   */
-
+ 
   .project-img, .blog-banner-box { border-radius: 16px; }
 
   .blog-posts-list { gap: 30px; }
@@ -1502,10 +1373,37 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * #CONTACT
-   */
+ .skill-progress-bg {
+  background:white;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 8px;
+}
 
+.skill-progress-fill {
+  background:#fec461;
+  height: 100%;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
   .mapbox {
     height: 380px;
     border-radius: 18px;
@@ -1529,51 +1427,27 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-
-
-
-
-/**
- * responsive larger than 768px screen
- */
+ 
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+ 
   .sidebar, article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-
-
-  /**
-   * SIDEBAR
-   */
+ 
 
   .contacts-list {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
 
-
-
-  /**
-   * NAVBAR
-   */
+ 
 
   .navbar-link { --fs-8: 15px; }
 
-
-
-  /**
-   * ABOUT
-   */
-
-  /* testimonials modal */
-
+ 
   .testimonials-modal {
     gap: 35px;
     max-width: 680px;
@@ -1581,12 +1455,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .modal-avatar-box img { width: 80px; }
 
-
-
-  /**
-   * PORTFOLIO
-   */
-
+ 
   .article-title { padding-bottom: 20px; }
 
   .filter-select-box { display: none; }
@@ -1610,16 +1479,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
-
+ 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
-
-
-  /**
-   * CONTACT
-   */
-
+ 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
 
   .form-btn {
@@ -1629,26 +1492,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   
 }
 
-
-
-
-
-/**
- * responsive larger than 1024px screen
- */
+ 
 
 @media (min-width: 1024px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  
 
   :root {
-
-    /**
-    * shadow
-    */
-
+ 
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
@@ -1656,22 +1507,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
+ 
 
   .sidebar, article {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
 
-
-
-  /**
-   * MAIN 
-   */
-
+ 
   main { margin-bottom: 60px; }
 
   .main-content {
@@ -1681,10 +1524,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-
-  /**
-   * NAVBAR
-   */
+ 
 
   .navbar {
     position: absolute;
@@ -1704,60 +1544,33 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .navbar-link { font-weight: var(--fw-500); }
-
-
-
-  /**
-   * ABOUT
-   */
-
-  /* service */
-
+ 
   .service-list {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
 
-  /* testimonials */
+ 
 
   .testimonials-item { min-width: calc(50% - 15px); }
 
-  /* clients */
+ 
 
   .clients-item { min-width: calc(25% - 38px); }
 
 
-
-  /**
-   * PORTFOLIO
-   */
-
+ 
   .project-list { grid-template-columns: repeat(3, 1fr); }
 
 
-
-  /**
-   * BLOG
-   */
-
+ 
   .blog-banner-box { height: 230px; }
 
 }
 
-
-
-
-
-/**
- * responsive larger than 1250px screen
- */
-
+ 
 @media (min-width: 1250px) {
-
-  /**
-   * RESET
-   */
-
+ 
   body::-webkit-scrollbar { width: 20px; }
 
   body::-webkit-scrollbar-track { background: var(--smoky-black); }
@@ -1773,22 +1586,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   body::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.15); }
 
   body::-webkit-scrollbar-button { height: 60px; }
-
-
-
-  /**
-   * REUSED STYLE
-   */
+ 
 
   .sidebar, article { width: auto; }
 
   article { min-height: 100%; }
-
-
-
-  /**
-   * MAIN
-   */
+ 
 
   main {
     max-width: 1200px;
@@ -1806,11 +1609,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-
-  /**
-   * SIDEBAR
-   */
-
+ 
   .sidebar {
     position: sticky;
     top: 60px;
@@ -1861,10 +1660,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-	 * RESUME
-	 */
-
+  
   .timeline-text { max-width: 700px; }
 
 }
